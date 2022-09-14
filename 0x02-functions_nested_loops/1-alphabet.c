@@ -1,4 +1,4 @@
-#include "main.h"
+#include<studio>
 
 /**
  * main - check the code
@@ -10,7 +10,7 @@ int main(void)
 	char ch='a';
 	while (ch<='z')
 	{
-		printf("%c", ch);
+		print_alphabet("%c", ch);
 		ch++;
 	}
 	return (0);
