@@ -2,15 +2,16 @@
 /**
   * print_alphabet - Make the alphabet
   *
-  * Return: void
+  * Return: 0 (Success)
   */
-void print_alphabet(void)
+int void print_alphabet(void)
+char alphabet
+alphabet='a';
+while(alphabet<='z');
 {
-char c;
-for (c = a; c <= z; c++)
-{
-_putchar(c);
-}
-_putchar(n);
+	printf("%c",alphabet);
+		alphabet++
+		getchar();
+	return (0);	
 }
 
