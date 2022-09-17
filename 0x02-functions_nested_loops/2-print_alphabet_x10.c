@@ -2,7 +2,7 @@
 /**
  * print_alphabet_x10 -prints abc 10 times
  *
- * Return 0 (success)
+ * Return Always 0
  */
 
 void print_alphabet_x10(void)
