@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main(void)
 /**
- *
- *main - Entry point
- *Return: Always 0 (Success)
- */
+ * Main - Entry point
+ * Return: 0 (success)
+ */ 
+
 {
 
 	printf("with proper grammar, but the outcome is a piece of art,");
