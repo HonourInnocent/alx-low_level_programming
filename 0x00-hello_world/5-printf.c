@@ -5,10 +5,12 @@
  * Return -0 (success)
  */
 
-int main(void)
+int main (void)
+
 {
-printf("with proper grammar, but the outcome is a piece of art,");
-printf("\n");
-getchar();
-return(0);
+
+	printf("with proper grammar, but the outcome is a piece of art,");
+	printf("\n");
+	getchar();
+	return (0);
 }
