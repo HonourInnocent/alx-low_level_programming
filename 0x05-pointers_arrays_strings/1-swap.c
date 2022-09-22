@@ -1,20 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - Swaps two numbers
- *
- * Return: Always 0.
- */
+* swap_int - swaps int
+* @a: pointer 1
+* @b: pointer 2
+* Return: void
+*/
 void swap_int(int *a, int *b)
 {
-    int a;
-    int b;
+	*a += *b;
+	*b = *a - *b;
+	*a = *a - *b;
 
-    a = 98;
-    b = 42;
-    printf("a=%d, b=%d\n", a, b);
-    swap_int(&a, &b);
-    printf("a=%d, b=%d\n", a, b);
-    return (0);
 }
