@@ -1,4 +1,4 @@
-#include "maim.h"
+#include "main.h"
 
 /**
 * puts2 - prints har
