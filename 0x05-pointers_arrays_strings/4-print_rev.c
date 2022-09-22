@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * print_rev - reverse the contents of an array of integers
- * @a: array of integers
- * @n: number of elements in array
- */
-
-void print_rev(char *s);
-
+* print_rev - prints reversed string
+* @s: pointer
+* Return: void
+*/
+void print_rev(char *s)
 {
-	char *str;
+	int i = 0;
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    print_rev(str);
-    return (0);
+	while (s[i])
+		i++;
+	while (i--)
+		_putchar(s[i]);
+	_putchar('\n');
 }
