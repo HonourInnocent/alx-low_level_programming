@@ -6,15 +6,15 @@
  * @b: byte
  * @n: number of memory
  *
- * Return: 0 (success)
+ * Return: A string
  */
 
 char *_memset(char *s, char b, unsigned int n)
 
 {
-	unsigned int x;
+	unsigned int s;
 
-	for (x = 0; x < n;)
+	for (a = 0; a  < n;)
 		x++;
 		s[x] = b;
 	return (s);
