@@ -1,31 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
+#include <stdlib.h>
 
 /**
- * print_strings - Print out all given strings
- * @separator: String to print between other strings
- * @n: Number of strings being printed
+ * print_numbers - Print n amount of numbers, separated by the separator string
+ * @separator: The string to pring between numbers
+ * @n: Number of numbers to print
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list words;
-	char *word;
+	va_list nums;
 	unsigned int i;
 
-	va_start(words, n);
 	i = 0;
+	va_start(nums, n);
 	while (i < n)
 	{
-		word = va_arg(words, char *);
-		if (word != NULL)
-			printf("%s", word);
-		else
-			printf("(nil)");
+		printf("%d", va_arg(nums, int));
 		if (i < n - 1 && separator != NULL)
 			printf("%s", separator);
 		i++;
 	}
 	printf("\n");
-	va_end(words);
+	va_end(nums);
 }
